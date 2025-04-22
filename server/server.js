@@ -12,5 +12,5 @@ const PORT = process.env.PORT || 4000
 app.use('/', VerifyRouter)
 
 app.listen(PORT, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${PORT}`)
 })
