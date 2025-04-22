@@ -6,11 +6,11 @@ import VerifyRouter from './routes/verify.js'
 const app = express()
 app.use(bodyParser.json())
 
-const PORT = 3000
+const PORT = process.env.PORT || 4000
 
 // Import Routes
 app.use('/', VerifyRouter)
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`)
+  console.log(`Example app listening on port ${port}`)
 })
