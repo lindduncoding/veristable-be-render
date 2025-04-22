@@ -9,7 +9,7 @@
     "server:dev": "nodemon server.js",
     "download:zk-circuits": "node node_modules/@reclaimprotocol/zk-symmetric-crypto/lib/scripts/download-files && mkdir -p node_modules/@reclaimprotocol/attestor-core/node_modules/@reclaimprotocol/zk-symmetric-crypto/resources && cp -r node_modules/@reclaimprotocol/zk-symmetric-crypto/resources/* node_modules/@reclaimprotocol/attestor-core/node_modules/@reclaimprotocol/zk-symmetric-crypto/resources",
     "copy:zk-circuits": "cp -r vendor/resources/* node_modules/@reclaimprotocol/attestor-core/node_modules/@reclaimprotocol/zk-symmetric-crypto/resources",
-    "postinstall": "yarn run download:zk-circuits",
+    "postinstall": "yarn run copy:zk-circuits",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
