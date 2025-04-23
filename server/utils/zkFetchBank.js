@@ -2,7 +2,6 @@ import { ReclaimClient } from '@reclaimprotocol/zk-fetch'
 import { transformForOnchain, verifyProof } from '@reclaimprotocol/js-sdk'
 import dotenv from 'dotenv'
 
-// Read .env file
 dotenv.config()
 
 // Simulate zkfetch backend fetch and verification

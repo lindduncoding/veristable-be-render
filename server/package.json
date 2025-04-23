@@ -8,14 +8,14 @@
   "scripts": {
     "server:dev": "nodemon server.js",
     "download:zk-circuits": "node node_modules/@reclaimprotocol/zk-symmetric-crypto/lib/scripts/download-files && mkdir -p node_modules/@reclaimprotocol/attestor-core/node_modules/@reclaimprotocol/zk-symmetric-crypto/resources && cp -r node_modules/@reclaimprotocol/zk-symmetric-crypto/resources/* node_modules/@reclaimprotocol/attestor-core/node_modules/@reclaimprotocol/zk-symmetric-crypto/resources",
-    "copy:zk-circuits": "cp -r vendor/resources/ node_modules/@reclaimprotocol/attestor-core/node_modules/@reclaimprotocol/zk-symmetric-crypto/resources",
-    "move:reclaim-protocol": "mv @reclaimprotocol/ node_modules",
+    "postinstall": "npm run download:zk-circuits",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fidelya Fredelina",
   "license": "MIT",
   "dependencies": {
+    "ethers": "^5.7.2",
     "@reclaimprotocol/js-sdk": "^2.1.3",
     "@reclaimprotocol/zk-fetch": "0.3.2",
     "@reclaimprotocol/zk-symmetric-crypto": "3.0.4",

@@ -1,7 +1,9 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import VerifyRouter from './routes/verify.js'
+import dotenv from 'dotenv'
 
+dotenv.config()
 
 const app = express()
 app.use(bodyParser.json())
