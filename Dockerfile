@@ -1,13 +1,6 @@
 # Use Alpine-based Node image
 FROM node:22-alpine
 
-# Install git (and optionally build tools)
-# RUN apt-get update && apt-get install -y \
-#     git \
-#     build-essential \
-#     python3 \
-#  && rm -rf /var/lib/apt/lists/*
-
 RUN apk add --no-cache git
 
 # Create app directory

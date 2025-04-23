@@ -1,0 +1,43 @@
+# flyctl launch added from .gitignore
+**\.env
+**\node_modules
+**\routes.http
+
+# flyctl launch added from server\node_modules\@reclaimprotocol\tls\.gitignore
+server\node_modules\@reclaimprotocol\tls\**\node_modules
+server\node_modules\@reclaimprotocol\tls\**\lib
+server\node_modules\@reclaimprotocol\tls\**\.DS_Store
+server\node_modules\@reclaimprotocol\tls\**\.idea
+
+# flyctl launch added from server\node_modules\@reclaimprotocol\zk-fetch\.gitignore
+server\node_modules\@reclaimprotocol\zk-fetch\**\node_modules
+server\node_modules\@reclaimprotocol\zk-fetch\**\tests\.keys.json
+server\node_modules\@reclaimprotocol\zk-fetch\**\scratch
+server\node_modules\@reclaimprotocol\zk-fetch\**\dist
+server\node_modules\@reclaimprotocol\zk-fetch\**\build
+server\node_modules\@reclaimprotocol\zk-fetch\**\.env
+
+# flyctl launch added from server\node_modules\minipass-sized\.gitignore
+# ignore most things, include some others
+server\node_modules\minipass-sized\*
+server\node_modules\minipass-sized\.*
+
+!server\node_modules\minipass-sized\**\bin
+!server\node_modules\minipass-sized\**\lib
+!server\node_modules\minipass-sized\**\docs
+!server\node_modules\minipass-sized\**\package.json
+!server\node_modules\minipass-sized\**\package-lock.json
+!server\node_modules\minipass-sized\**\README.md
+!server\node_modules\minipass-sized\**\CONTRIBUTING.md
+!server\node_modules\minipass-sized\**\LICENSE
+!server\node_modules\minipass-sized\**\CHANGELOG.md
+!server\node_modules\minipass-sized\**\example
+!server\node_modules\minipass-sized\**\scripts
+!server\node_modules\minipass-sized\**\tap-snapshots
+!server\node_modules\minipass-sized\**\test
+!server\node_modules\minipass-sized\**\.travis.yml
+!server\node_modules\minipass-sized\**\.gitignore
+!server\node_modules\minipass-sized\**\.gitattributes
+!server\node_modules\minipass-sized\**\coverage-map.js
+!server\node_modules\minipass-sized\**\index.js
+fly.toml
