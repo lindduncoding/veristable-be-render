@@ -1,8 +1,10 @@
 import express from 'express'
 import zkFetchBank from '../utils/zkFetchBank.js'
 import verifyToken from '../utils/reserveComparison.js'
+import cors from 'cors'
 
 const router = new express.Router()
+router.use(cors())
 
 router.post('/verify', async (req, res) => {
     try {
